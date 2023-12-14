@@ -4,6 +4,11 @@ const app = express();
 //const PORT = 2000;
 const PORT = process.env.PORT || 3030;
 
+//default path
+app.get("/", (req, res) => {
+  res.send("Welcome To Nodejs-FileSystem");
+});
+
 //API 1
 app.get("/createfile", (req, res) => {
   //file name as date-time.text
