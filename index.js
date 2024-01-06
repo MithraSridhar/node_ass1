@@ -1,8 +1,8 @@
 const express = require("express"); //inbuilt package
 const fs = require("fs");
 const app = express();
-//const PORT = 2000;
-const PORT = process.env.PORT || 3030;
+const PORT = 2000;
+//const PORT = process.env.PORT || 3030;
 
 //default path
 app.get("/", (req, res) => {
